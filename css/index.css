@@ -1,9 +1,51 @@
+/* style sheet for website */
 
+/* global variables */
+:root
+{
+   --greyfontcolor:#121212;
+}
 
 .background-color
 {
    height:100vh;
    width: 50vw;
-   background-image: linear-gradient(rgb(238, 238, 224),rgb(185, 87, 87));
+   background-image: linear-gradient( rgba(141, 141, 255, 0.75),rgba(255, 255, 255, 1));
+   /*background-position: center;
+   background-size: cover;
+   position: relative;*/
+}
 
+img
+{
+   width: 150px;
+   float: left;
+   padding-left: 5rem;
+   padding-top: 2rem;
+
+}
+
+.nav-bar
+{
+   float: right;
+}
+.nav-menu
+{
+   float: right;
+   list-style: none;
+}
+
+
+.hero-text
+{
+   color: var(--greyfontcolor);
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Poppins;
+   font-size: 95px;
+   font-weight:bolder;
+   text-align:left;
+   text-transform: uppercase;
+   padding: 0.25rem;
 }
