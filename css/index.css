@@ -4,6 +4,7 @@
 :root
 {
    --greyfontcolor:#121212;
+   
 }
 
 .background-color
@@ -16,23 +17,44 @@
    position: relative;*/
 }
 
-img
+header
 {
-   width: 150px;
-   float: left;
+   display:flex;
+   justify-content:flex-end;
+   align-items: center;
+   
+}
+
+.logo
+{
+   cursor: pointer;
+   width: 100px;
+   margin-right: auto;
    padding-left: 5rem;
    padding-top: 2rem;
 
 }
 
-.nav-bar
-{
-   float: right;
-}
 .nav-menu
 {
-   float: right;
    list-style: none;
+}
+
+.nav-menu li
+{
+   display: inline-block;
+   justify-content: space-around;
+   transform:translateX(750px);
+   padding:0px 10px;
+   margin-left: 10px;
+   font-family: Poppins;
+   font-size:22px;
+}
+
+.nav-menu li a
+{
+   color:var(--greyfontcolor);
+   text-decoration: none;
 }
 
 
@@ -43,9 +65,10 @@ img
    justify-content: center;
    align-items: center;
    font-family: Poppins;
-   font-size: 95px;
-   font-weight:bolder;
-   text-align:left;
+   font-size: 75px;
+   margin-left: 5rem;
    text-transform: uppercase;
-   padding: 0.25rem;
+   padding: 1rem;
+   line-break: loose;
+   background-color: rgba(141, 255, 141, 1);
 }
